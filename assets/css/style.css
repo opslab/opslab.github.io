@@ -60,6 +60,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.btn-talk-us {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+  border: 2px solid #ffffff;
+}
+
+.btn-talk-us:hover {
+  background-color: #007bff;
+  color: #ffffff;
+  border: 2px solid #007bff;
+}
+
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
