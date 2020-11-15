@@ -515,7 +515,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   font-size: 15px;
   padding-bottom: 60px;
-  color: #000000;
+  color: #f8f8f8;
   width: 50%;
 }
 
@@ -646,7 +646,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #services .icon {
   position: absolute;
-  left: -10px;
+  left: 3px;
   top: calc(50% - 32px);
 }
 
@@ -1216,11 +1216,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact .php-email-form button[type="submit"] {
-  background: #ab0bfa;
-  border: 0;
+  background: none;
+  border: 2px solid #ab0bfa;
   border-radius: 20px;
   padding: 8px 30px;
-  color: #000000;
+  color: #ffffff;
   transition: 0.3s;
 }
 
@@ -1365,7 +1365,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 35%;
   padding: 6px 0;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -1392,4 +1392,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .credits a:hover {
   color: #f1f7ff;
+}
+
+.modal-title {
+  color: #ab0bfa;
+}
+
+.modal-body p {
+  color: #ab0bfa;
+}
+
+.btn-modal {
+  background-color: #ab0bfa;
+  color: #ffffff
+}
+
+#contact .php-email-form button[type="submit"]:hover {
+  background: #ab0bfa;
 }

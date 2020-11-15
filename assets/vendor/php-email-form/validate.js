@@ -96,14 +96,14 @@ jQuery(document).ready(function($) {
     var action = $(this).attr('action');
 
     if( ! action ) {
-      this_form.find('.loading').slideUp();
+      //this_form.find('.loading').slideUp();
       this_form.find('.error-message').slideDown().html('The form action property is not set!');
       return false;
     }
     
     this_form.find('.sent-message').slideUp();
     this_form.find('.error-message').slideUp();
-    this_form.find('.loading').slideDown();
+    //this_form.find('.loading').slideDown();
     
     $.ajax({
       type: "POST",
@@ -121,7 +121,8 @@ jQuery(document).ready(function($) {
       },
 	error: function(err) {
           this_form.find('.loading').slideUp();
-          this_form.find('.error-message').slideDown().html("Email fail");
+          //this_form.find('.sent-message').slideDown().html("Success");
+          $("#emailmodal").modal()
 
 	}
     });
