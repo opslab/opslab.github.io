@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: var(--black);
+  color: var(--white);
   padding: 10px 20px;
   font-weight: 500;
 }
@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-toggle i {
   margin: 18px 18px 0 0;
-  color: #004289;
+  color:var(--opslabcolor);
 }
 
 .mobile-nav-overly {
@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: var(--black);
+  color: var(--white);
 }
 
 /*--------------------------------------------------------------
@@ -1054,7 +1054,14 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------*/
 #clients {
   padding: 60px 0;
+  height:100vh;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 999px) {
+  #clients {
+    height:auto;
+  }
 }
 
 #clients .clients-wrap {
